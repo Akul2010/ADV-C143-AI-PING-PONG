@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+    </head>
+    <body background="background1.jpg">
+
+        <center>
+            <div class="btn btn-primary heading">
+                <h3>Ping Pong Game</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instruction</button>
+            </div>
+            <br>
+            <br>
+            <button class="btn btn-success" onclick="startGame();" id="start">Start Game</button>
+            <br>
+            <br>
+            <div class="btn btn-warning" id="status"></div>
+            <br>
+            <br>
+            <button class="btn btn-danger" onclick="reset();" id="restart">Restart Game</button>
+            <br>
+            <br>
+            <div id="canvas"></div>
+            <br>
+            <br>
+            <div id="game_console"></div>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                  <button data-dismiss="modal" class="close">&times;</button>
+                  <h4>Instruction</h4>
+                </div>
+                  <div class="modal-body">
+                    <h2>Move your right wrist up to move the paddle up and move your right wrist down to move your paddle down
+                      <br>
+                      <br>
+                      Click Start Game button to start the game
+                      <br>
+                      <br>
+                      Click Restart to restart the game
+                    </h2>
+                  </div>
+                  </div>
+                </div>
+              </div>
+        </center>
+
+        
+    </body>
+</html>

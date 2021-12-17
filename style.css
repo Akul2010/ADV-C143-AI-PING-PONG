@@ -1,0 +1,38 @@
+.heading
+{
+    width: 100%;
+    text-align: left;
+}
+
+.heading button
+{
+    float: right;
+    border: 1px solid white;
+}
+
+.heading h3
+{
+    display: inline;
+}
+
+#status, #start
+{
+    font-size: 22px;
+}
+
+#canvas
+{
+    border: 5px solid aqua;
+    box-shadow: 10px 10px 20px aqua;
+    width: 900;
+    height: 700;
+}
+
+video
+{
+    background: url('game_console copy.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+
+}
